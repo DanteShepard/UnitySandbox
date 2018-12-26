@@ -15,8 +15,10 @@ namespace Nordeus.Build
         /// </summary>
         /// <param name="buildPath">Path for the output APK.</param>
         /// <param name="textureCompression">If not null, will override the texture compression subtarget.</param>
-        public static void BuildAndroid(string buildPath, MobileTextureSubtarget? textureCompression = null)
+        public static void BuildAndroid(/*string buildPath,*/ MobileTextureSubtarget? textureCompression = null)
         {
+            string buildPath = "D://alfa_b.apk";
+
             if (textureCompression != null)
             {
                 EditorUserBuildSettings.androidBuildSubtarget = textureCompression.Value;
