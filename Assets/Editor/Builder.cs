@@ -22,19 +22,18 @@ namespace Nordeus.Build
                 EditorUserBuildSettings.androidBuildSubtarget = textureCompression.Value;
             }
 
-            //string buildMessage = BuildPipeline.BuildPlayer(GetEnabledScenePaths().ToArray(), buildPath, BuildTarget.Android, BuildOptions.None).ToString();
+            string buildMessage = BuildPipeline.BuildPlayer(GetEnabledScenePaths().ToArray(), buildPath, BuildTarget.Android, BuildOptions.None).ToString();
 
-            var report = BuildPipeline.BuildPlayer(GetEnabledScenePaths().ToArray(), buildPath, BuildTarget.Android, BuildOptions.None).ToString();
+            //var report = BuildPipeline.BuildPlayer(GetEnabledScenePaths().ToArray(), buildPath, BuildTarget.Android, BuildOptions.None).ToString();
 
             Debug.Log("Build finish");
 
-            /*
             if (string.IsNullOrEmpty(buildMessage)) BuildReporter.Current.IndicateSuccessfulBuild();
             else
             {
                 BuildReporter.Current.Log(buildMessage, BuildReporter.MessageSeverity.Error);
             }
-            */
+            
         }
 
         /// <summary>
