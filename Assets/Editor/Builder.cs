@@ -82,7 +82,7 @@ namespace Nordeus.Build
             switch (parsedBuildTarget)
             {
                 case BuildTarget.Android:
-                    BuildAndroid(buildPath, parsedTextureSubtarget);
+                    BuildAndroid(/*buildPath,*/ parsedTextureSubtarget);
                     break;
                 case BuildTarget.iOS:
                     BuildIos(buildPath);

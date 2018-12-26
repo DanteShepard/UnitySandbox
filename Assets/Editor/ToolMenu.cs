@@ -6,7 +6,8 @@ public class MenuItems
     [MenuItem("Tools/Build")]
     private static void NewMenuOption()
     {
-        Nordeus.Build.Builder.BuildAndroid("D://alfa_apk.");
+        //Nordeus.Build.Builder.BuildAndroid("D://alfa_apk.");
+        Nordeus.Build.Builder.BuildAndroid();
     }
 
 }
